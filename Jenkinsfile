@@ -10,6 +10,8 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     stage('build'){
 	sh "${mavenhome}/bin/mvn clean package"
 	}
+	
+/*	
 	stage('execute sonarqube report'){
 	sh "${mavenhome}/bin/mvn sonar:sonar"
 	}
@@ -27,6 +29,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     Regards,
     Swapna M,
     9177602546.''', subject: 'Build over', to: 'rgreddycrp@gmail.com'
-	  }
+    }
+*/	  
  } 
  
